@@ -1,4 +1,5 @@
 import express, { Request, Response, NextFunction } from "express"
+import diffRoutes from "./routes/diff.routes.js"
 import cors from "cors"
 import { config } from "./config/env.js"
 import { connectDB } from "./config/db.js"
@@ -11,6 +12,7 @@ app.use(express.json({ limit: "10mb" }))
 app.use(express.urlencoded({ extended: true }))
 
 app.use("/api", healthRoutes)
+app.use("/api", diffRoutes)
 
 app.get("/", (_req: Request, res: Response) => {
     res.json({
