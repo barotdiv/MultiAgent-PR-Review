@@ -3,7 +3,6 @@ import { OllamaService } from "../ollama/ollama.service.js"
 import { DiffCollectorService } from "../diff/diffCollector.service.js"
 import { AgentReviewResponse, AgentType, ParsedDiff } from "../../types/index.js"
 
-
 export const RawFindingSchema = z.object({
     id: z.string(),
     file: z.string(),
