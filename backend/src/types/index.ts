@@ -30,7 +30,7 @@ export interface ParsedDiff {
 
 // 2. Agent Finding Model
 export type AgentType = "Bug" | "Security" | "Performance" | "Quality"
-export type SeverityLevel = "CRITICAL" | "HIGH" | "Medium" | "LOW" | "INFO"
+export type SeverityLevel = "CRITICAL" | "HIGH" | "MEDIUM" | "LOW" | "INFO"
 
 export interface AgentFinding {
     id: string
