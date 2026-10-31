@@ -54,8 +54,9 @@ export interface AgentReviewResponse {
 }
 
 // 3. Genesis Evidence Receipt 
-export interface EvidenceRecepit {
-    recepitId: string
+export interface EvidenceReceipt {
+    receiptId: string
+    recepitId?: string
     findingId: string
     ruleCategory: AgentType
     sourceFile: string
@@ -64,9 +65,11 @@ export interface EvidenceRecepit {
     recommendedPatch: string
     status: "open" | "accepted" | "dismissed"
 }
+export type EvidenceRecepit = EvidenceReceipt
 
 // 4. Aggregated PR Review Result
 export type MergeReadiness = "READY" | "CHANGES_REQUESTED" | "BLOCKED"
+export type MergedReadiness = MergeReadiness
 
 export interface ReviewReport {
     id: string
@@ -85,5 +88,6 @@ export interface ReviewReport {
     }
     executiveSummary: string
     findings: AgentFinding[]
-    evidenceRecepits: EvidenceRecepit[]
+    evidenceReceipts: EvidenceReceipt[]
+    evidenceRecepits?: EvidenceRecepit[]
 }

@@ -68,7 +68,7 @@ const EvidenceRecepitSubSchema = new Schema<EvidenceRecepit>(
         findingId: { type: String, required: true },
         ruleCategory: {
             type: String,
-            enum: ["Bug", "Secuirty", "Performance", "Quality"],
+            enum: ["Bug", "Security", "Performance", "Quality"],
             required: true
         },
         sourceFile: { type: String, required: true },
