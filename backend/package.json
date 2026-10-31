@@ -22,14 +22,18 @@
     "cors": "^2.8.6",
     "dotenv": "^18.0.9",
     "express": "^5.3.0",
+    "express-rate-limit": "^8.7.2",
     "mongoose": "^9.11.4",
     "parse-diff": "^0.12.0",
+    "pino": "^10.4.0",
+    "pino-pretty": "^13.2.0",
     "zod": "^4.6.7"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/node": "^20.14.2",
+    "@types/pino": "^7.0.4",
     "tsx": "^4.15.1",
     "typescript": "^5.4.5"
   }
